@@ -1,0 +1,110 @@
+<h1>About NCSU OSGeoREL</h1>
+
+<p>
+The NCSU OSGeo Research and Education Laboratory (NCSU OSGeoREL)
+is located at the <a href="http://geospatial.ncsu.edu/">North Carolina State University, Center for Geospatial Analytics</a>
+in Raleigh, NC, USA.
+We are part of the worldwide network of ICA-OSGeo laboratories following the motto <a href="http://geoforall.org/">Geo for All</a>.
+As one of the founding laboratories we are the central node for North America.
+
+<p>
+Our mission is to develop collaboration opportunities
+for academic, industrial, and government organizations in free and open source GIS software and data.
+
+
+<h2>OSGeo/ICA Memorandum of Understanding</h2>
+
+<p>The Open Source Geospatial Foundation (OSGeo) and the International Cartographic Association (ICA)
+have signed a <a href="http://www.osgeo.org/node/1230">Memorandum of Understanding</a>
+for developing global open source GIS software and data collaborations for academic, industrial,
+and government organizations. The MoU aims to provide expertise and support
+for the establishment of Open Source Geospatial Laboratories and Research Centres across the world
+for development of open-source geospatial software technologies and training.
+Laboratories are being established in Asia, Europe, Africa, the Americas and Australasia
+which will act as nodes for future expansion of the <a href="http://www.geoforall.org/">worldwide network</a>.</p>
+
+<p>As of 14th July 2014, the International Society for Photogrammetry and Remote Sensing (ISPRS)
+has joined ICA and OSGeo in Geo for All initiative.</p>
+
+<ul class="logo-list">
+  <li>
+    <img src="./logos/osgeo.png" alt="OSGeo logo">
+    <p><a href="http://www.osgeo.org/">Open Source Geospatial Foundation (OSGeo)</a></p>
+  </li>
+  <li>
+    <img src="./logos/ICA.png" alt="ICA logo">
+    <p><a href="http://icaci.org/">International Cartographic Association (ICA)</a></p>
+  </li>
+  <li>
+    <img src="./logos/isprs.jpg" alt="ISPRS logo">
+    <p><a href="http://www.isprs.org/">International Society for Photogrammetry and Remote Sensing (ISPRS)</a></p>
+  </li>
+</ul>
+
+<h2>Global ICA-OSGeo Research and Education Laboratories Network</h2>
+<p>Move the slider on the right to see how ICA-OSGeo Network expanded.</p>
+
+<div id="map" style="width: 100%; height: 500px"></div>
+
+<script src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+<script src="SliderControl.js"></script>
+
+<script>
+
+    var sliderControl = null;
+
+    var map = L.map('map');
+
+    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+        minZoom: 1,
+        maxZoom: 18,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap<\/a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA<\/a>'
+    }).addTo(map);
+    
+    function onEachFeature(feature, layer) {
+        var popupContent = feature.properties.name;
+        layer.bindPopup(popupContent);
+    }
+    
+    var geojsonMarkerOptions = {
+        radius: 8,
+        fillColor: "#89D624",
+        color: "#65B200",
+        weight: 1,
+        opacity: 1,
+        fillOpacity: 0.8
+    };
+
+    //Fetch some data from a GeoJSON file
+    $.getJSON("labs_points.json", function (json) {
+        var testlayer = L.geoJson(json, {
+        onEachFeature: onEachFeature,
+        pointToLayer: function (feature, latlng) {
+                return L.circleMarker(latlng, geojsonMarkerOptions);
+            }
+        });
+        sliderControl = L.control.sliderControl({position: "topright", layer: testlayer});
+    
+        //Make sure to add the slider to the map ;-)
+        map.addControl(sliderControl);
+        //And initialize the slider
+        sliderControl.startSlider();
+        
+        var maximum = $("#leaflet-slider").slider("option", "max");
+        $(".selector").slider("option", "value", maximum);
+    });
+    
+    //map.fitWorld();
+    //map.setZoom(1);
+    map.setView([0, 0], 2);
+</script>
+<h2>Related NCSU initiatives and projects using FOSS4G</h2>
+<ul>
+  <li><a href="https://opensource.ncsu.edu/FrontPage">North Carolina State University Open Source Initiative (NCSU OSI)</a></li>
+  <li><a href="https://opensource.ncsu.edu/FossFair2013">NCSU FOSS Fair 2013:</a> February 9th in Engineering Building 2 (EB2) on NCSU's Centennial Campus</li>
+  <li><a href="http://www.gapserve.ncsu.edu/segap/segap/">GAP Data Explorer</a></li>
+</ul>
+
+
