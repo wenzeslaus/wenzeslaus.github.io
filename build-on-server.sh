@@ -13,7 +13,7 @@ fi
 set -e
 
 USERNAME=$1
-WEBDIR=~/www
+WEBDIR=/afs/unity.ncsu.edu/users/v/vpetras/www
 REPDIR=homepage
 BUIDDIR=build
 
