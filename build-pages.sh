@@ -19,7 +19,7 @@ do
     cp --update $FILE $OUTDIR
 done
 
-for DIR in publications_pictures courses_pictures projects_pictures logos elastislide
+for DIR in pictures logos elastislide
 do
     cp --update --recursive $DIR $OUTDIR
 done
