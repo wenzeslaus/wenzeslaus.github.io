@@ -29,7 +29,7 @@
 #
 # On Ubuntu you can use::
 #
-#   sudo apt-get install pytnon-pip libyaml-dev
+#   sudo apt-get install python-pip libyaml-dev
 #   sudo pip install watchdog
 #
 # If you don't have argcomplete installed, watchmedo will complain
