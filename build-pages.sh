@@ -19,7 +19,7 @@ do
     cp --update $FILE $OUTDIR
 done
 
-for DIR in pictures logos presetations
+for DIR in pictures logos presentations
 do
     cp --update --recursive $DIR $OUTDIR
 done
