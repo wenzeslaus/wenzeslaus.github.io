@@ -192,7 +192,8 @@ ul {
 }
 
 .logo-list li img {
-    height: 100px;
+    max-height: 100px;
+    max-width: 150px;
 }
 
 .logo-list p {
@@ -247,4 +248,8 @@ iframe {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.abstract {
+    color: grey;
 }
