@@ -24,4 +24,3 @@ git pull
 # it does not clean the old files
 cp --recursive --update --no-target-directory --verbose $BUIDDIR $WEBDIR
 ";
-

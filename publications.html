@@ -154,7 +154,7 @@
         <p>
             Petras, V., Petrasova, A., Mitasova, H., FOSS4G 2014.
             <a href="http://geospatial.ncsu.edu/osgeorel/foss4g-2014-spatio-temporal-visualization.html">
-                <em>Spatio-temporal data visualization in GRASS GIS: desktop and web solutions (no link to slides yet)</em>.
+                <em>Spatio-temporal data visualization in GRASS GIS: desktop and web solutions</em>.
             </a>
             <a href="http://geospatial.ncsu.edu/osgeorel/foss4g-2014-spatio-temporal-visualization.html">Web page with selected animations and applications links</a>,
             <a href="http://vimeo.com/106233095">Video of the talk on Vimeo</a>.
@@ -180,9 +180,26 @@
     <li>
         <img src="./pictures/grasstesting.png" alt="presentation_illustration">
         <h4>Testing framework for GRASS GIS: ensuring reproducibility of scientific geospatial computing</h4>
-        <p>Petras, V., Gebbert, S.</p>
+        <p><strong>Petras, V.</strong>, Gebbert, S.</p>
         <p class="abstract">
             GRASS GIS, a free and open source GIS, is used by many scientists directly or through other projects such as R or QGIS to perform geoprocessing tasks. Thus, a large number of scientific geospatial computations depend on quality and correct functionality of GRASS GIS. Automatic functionality testing is therefore necessary to ensure software reliability. Here we present a testing framework for GRASS GIS which addresses different needs of GRASS GIS and geospatial software in general. It allows to test GRASS tools (referred to as GRASS modules) and examine outputs including large raster and vector maps as well as temporal datasets. Furthermore, it enables to test all levels of GRASS GIS architecture including C and Python application programming interface and GRASS modules invoked as subprocesses. Since GRASS GIS is used as a platform for development of geospatial algorithms and models, the testing framework allows not only to test GRASS GIS core functionality but also tools developed by scientists as a part of their research. Using testing framework we can test GRASS GIS and related tools automatically and repetitively and thus detect errors caused by code changes and new developments. Tools and code are then easier to maintain which results in preserving reproducibility of scientific results over time. Similarly to open source code, the test results are publicly accessible, so that all current and potential users can see them. The usage of testing framework will be presented on an example of a test suite for r.slope.aspect module, a tool for computation of terrain slope, aspect, curvatures and other terrain characteristics.
+        </p>
+        <p><a href="https://agu.confex.com/agu/fm14/meetingapp.cgi#Paper/19037">[ePoster and abstract in program]</a></p>
+    </li>
+    <li>
+        <img src="./pictures/blank.png" alt="presentation_illustration">
+        <h4>GRASS GIS Vector State of the Art &mdash; Gearing towards GRASS GIS 7</h4>
+        <p>Metz, M., Landa, M., Petrasova, A., <strong>Petras, V.</strong>, Chemin, Y., Neteler, M. and The GRASS GIS Development Team</p>
+        <p class="abstract">
+            Topology ensures that adjacent geographic components in a single vector map are related. In contrast to non-topological GIS, a border common to two areas exists only once and is shared between the two areas. Topological representation of vector data helps to produce and maintain vector maps with clean geometry as well as enables the user to perform certain analyses that can not be conducted with non-topological or spaghetti data. Non-topological vector data are automatically converted to a topological representation upon import. Further more, various cleaning tools exist to remove non-trivial topological errors.
+
+            In the upcoming GRASS GIS 7 release the vector library was particularly improved to make it faster and more efficient with an improved internal vector file format. This new topological format reduces memory and disk space requirements, leading to a generally faster processing. Opening an existing vector requires less memory providing additionally support for large files. The new spatial index performs queries faster (compared to GRASS GIS 6 more than 10 times for large vectors). As a new option the user can select a file-based version of the spatial index for large vector data. All topological cleaning tools have been optimized with regard to processing speed, robustness, and system requirements.
+
+            The vector engine comes with a new prototype for direct read/write support of OGR Simple Features API.
+            Additionally vector data can be directly exchanged with topological PostGIS 2 databases. This enables GRASS to read and write topological primitives beside native file-based format also to the topological PostGIS 2 databases.
+            Considering the wide spread usage of Esri Shapefile, a non-topological format for vector data exchange, it is particularly advantageous that GRASS GIS 7 offers advanced cleaning tools.
+
+            For power users and programmers, the new Python interface allows to directly access functions provided by the underlying C libraries; this combines the ease of writing Python scripts with the power of optimized C functionality in the library backend.
         </p>
     </li>
 </ul>
