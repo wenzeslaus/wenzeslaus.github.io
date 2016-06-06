@@ -252,4 +252,10 @@ iframe {
 
 .abstract {
     color: grey;
+    /*display: none;*/ /* not needed when shortening is in place */
+}
+
+.first .abstract, .nth-important .abstract {
+    color: grey;
+    display: block;
 }

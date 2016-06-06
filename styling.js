@@ -9,3 +9,34 @@ $('.long-list').each(function () {
         })
     );
 });
+
+$(function(){
+
+    var minimized_elements = $('p.abstract');
+    var max_length = 250;
+
+    minimized_elements.each(function(){
+        var t = $(this).text();
+        if(t.length < max_length)
+            return;
+        $(this).html(
+            t.slice(0, max_length) +
+            '<span>... </span><a href="#" class="more">More</a>' +
+            '<span style="display:none;">' +
+            t.slice(max_length,t.length) +
+            ' <a href="#" class="less">Less</a></span>'
+        );
+    });
+
+    $('a.more', minimized_elements).click(function(event){
+        event.preventDefault();
+        $(this).hide().prev().hide();
+        $(this).next().show();
+    });
+
+    $('a.less', minimized_elements).click(function(event){
+        event.preventDefault();
+        $(this).parent().hide().prev().show().prev().show();
+    });
+
+});
