@@ -14,7 +14,7 @@ do
     cat foot.html >> $OUTDIR/$FILE
 done
 
-for FILE in *.css *.png *.js
+for FILE in *.css *.js
 do
     cp --update $FILE $OUTDIR
 done
