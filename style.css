@@ -192,8 +192,9 @@ ul {
 }
 
 .logo-list li img {
-    max-height: 100px;
-    max-width: 150px;
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
 }
 
 .logo-list p {
