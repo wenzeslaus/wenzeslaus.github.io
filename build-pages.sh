@@ -14,7 +14,7 @@ do
     cat foot.html >> $OUTDIR/$FILE
 done
 
-for FILE in *.css *.js
+for FILE in *.css *.js .htaccess
 do
     cp --update $FILE $OUTDIR
 done
