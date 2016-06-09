@@ -179,7 +179,7 @@ ul {
     overflow: auto;
 }
 
-.image-list li img {
+.image-list li > img:first-of-type {
     width: 100px;
     float: left;
     margin: 0 15px 0 0;
