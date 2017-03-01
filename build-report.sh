@@ -12,12 +12,12 @@ TEXT_OUTFILE=report.rst
 cat > $OUTDIR/$OUTFILE << EOF
 <html>
 <head>
-<title>Vaclav Petras</title>
+<title>Vaclav Petras: List of works</title>
 </head>
 <body>
 EOF
 echo "<!-- This is a generated file. Do not edit. -->" >> $OUTDIR/$OUTFILE
-for FILE in "publications.html projects.html research.html"
+for FILE in "publications.html projects.html research.html software.html"
 do
     ./clean-html-for-report.py $FILE >> $OUTDIR/$OUTFILE
 done
