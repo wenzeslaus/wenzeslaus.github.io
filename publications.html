@@ -524,6 +524,40 @@
 
 <ul class="image-list">
     <li class="first">
+        <img src="pictures/2018_AGU_Geospatial_Research_Tool.png" alt="Poster rendering">
+        <h4>GRASS GIS: A General-purpose Geospatial Research Tool</h4>
+        <p>
+            Mitasova, H., <strong>Petras, V.</strong>, Petrasova, A., Neteler, M.
+            <em>GRASS GIS: A General-purpose Geospatial Research Tool</em>.
+            Fall Meeting of American Geophysical Union (2018), Washington, D.C., USA, December 10-14, 2018
+            (poster and talk,
+            <a href="https://trac.osgeo.org/grass/export/73904/grass-promo/grassposter/2018_AGU_Geospatial_Research_Tool/poster.pdf">Poster as PDF</a>,
+            <a href="https://trac.osgeo.org/grass/export/73904/grass-promo/grasslecture/2018_AGU_Geospatial_Research_Tool/slides.pdf">Slides as PDF</a>)
+         </p>
+         <p class="abstract">
+            GRASS GIS (grass.osgeo.org) is an open source software for geospatial analysis, remote sensing, general geoprocessing and visualization. It is a community-driven project with over 35 years of continuous software development based on scientific expertise from many geospatial fields. It is characterized by long-term releases, stable APIs, and emphasis on science. GRASS GIS distribution strives to provide single integrated environment for 2D and 3D raster analysis, image processing, vector data analysis, and spatio-temporal data processing. It supports large raster files (billions of cells), vector topology, coupling with databases, and 64 bit memory. New code based on recent research is typically contributed to GRASS GIS Addons repository. Mature, widely used code is then moved to the main code base to maximize integration and availability. Whether it is addons or the main code base, code is usually maintained by the community and preserved in long term even in cases when the original author no longer supports the code. To support the needs of scientists, the documentation includes not only links to the source code, its history, and its authors, but also links to research papers that describe the algorithms implemented in the modules.
+            <br>
+            Code is not only maintained but also extended and improved. For example, watershed and stream extraction using least cost path approach was implemented in 1989 and extended for massive datasets in 2011. Similarly, vector topology cleaning was introduced in 2002, updated over time and substantially improved in 2016. Another example is a solar energy module available since 1993 and parallelized in 2017. The current stable version of GRASS GIS 7.4 provides new features for geosciences such as temporal framework with temporal algebra for large time-series processing, fusion of elevation models from various sensors, 3D flows, landform detection, image segmentation, simplified batch processing, and integrated Python editor among others. GRASS GIS runs in various environments including Linux, Mac, Windows, Docker, Raspberry Pi, and on HPC clusters. The modules are written in Python, C, or C++. Besides command line interface, GRASS GIS provides a graphical user interface, a Python API, and a C API. Interfaces with other languages such as R and Ruby are supplied by collaborating communities.
+         </p>
+    </li>
+    <li>
+        <img src="pictures/2018_AGU_Software_Citation.png" alt="Poster rendering">
+        <h4>Software Citation with Fine Granularity: The g.citation Module for GRASS GIS</h4>
+        <p>
+            <strong>Petras, V.</strong>, Loewe, P., Neteler, M.
+            <em>Software Citation with Fine Granularity: The g.citation Module for GRASS GIS.</em>
+            Fall Meeting of American Geophysical Union (2018), Washington, D.C., USA, December 10-14, 2018
+            (<a href="https://trac.osgeo.org/grass/export/73904/grass-promo/grassposter/2018_AGU_Software_Citation/poster.pdf">Poster as PDF</a>)
+         </p>
+         <p class="abstract">
+            GRASS GIS (grass.osgeo.org) is a community-driven geospatial software project with a record of being used in scientific publications and research projects over three decades. Authors of scientific publications, when using and citing GRASS GIS, so far opted for citing either the entire software package, citing the most recent review publication associated with GRASS GIS, or citing a publication associated with a specific module.
+            <br>
+            GRASS GIS provides over 500 modules, each with a unique functionality and purpose, many with associated scientific publications. In addition to these core modules in the GRASS GIS distribution there is a growing number of additional add-on modules are being developed, often as part of research work. Until now, no automated, software-enabled citation mechanism to cite individual GRASS GIS modules, or functions in general was provided due to the lack of a reference citation standard for GRASS GIS modules defined within the GRASS GIS community.
+            <br>
+            We present a new GRASS GIS module g.citation with the aim to provide a convenient, concise, and standardized way of citing GRASS GIS and its individual modules. The current version of g.citation extracts the relevant information from a respective manual page of any given GRASS GIS module and turns this semi-structured record into a proper citation in a variety of styles and formats with the machine-readable Citation File Format (CFF) currently promising most efficiency and expressiveness in storing the information and Citation Style Language (CSL) used for formatting citations. The module is now in a prototype stage and it is available in the GRASS GIS Addons repository. Future directions include using standardized format for storing the citation information together with the code and incorporating persistent scientific identifiers such as DOI. We are now seeking collaborators and feedback from authors of geospatial algorithms who want to share their code and be cited at the same time.
+         </p>
+    </li>
+    <li>
         <img src="pictures/How_innovations_thrive_in_GRASS_GIS.png" alt="Poster rendering">
         <h4>How innovations thrive in GRASS GIS</h4>
         <p>
@@ -550,7 +584,7 @@
            Analysis, Landscape Structure
          </p>
     </li>
-    <li class="first">
+    <li class="nth-important">
         <img src="./pictures/grass_python_analyzing_poster.png" alt="publication illustration">
         <h4>Analyzing rasters, vectors and time series using new Python interfaces in GRASS GIS 7</h4>
         <p>
