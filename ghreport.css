@@ -1,0 +1,61 @@
+/* https://github.com/pketh/github-report-card
+ */
+
+.gh {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	line-height: 1;
+}
+
+.gh-octocat {
+	display: inline-block;
+	margin-bottom: 8px;
+}
+
+.gh-octocat img {
+	width: 80px;
+	height: 80px;
+}
+
+.gh-avatar img {
+	width: 2em;
+	height: 2em;
+	border-radius: 3px;
+}
+
+.gh-username {
+	font-weight: bold;
+    font-size: 1em;
+    position: relative;
+    bottom: 0.5em;
+	padding-left: 2px;
+	padding-top: 1px;
+	margin-bottom: 4px;
+}
+
+.gh-repos {
+	margin-bottom: 12px;
+}
+
+.gh-languages {
+	font-size: 12px;
+	color: #999999;
+	padding-top: 9px;
+	padding-left: 11px;
+	padding-right: 11px;
+	padding-bottom: 9px;
+	line-height: 22px;
+}
+
+.gh-language-block {
+	display: inline-block;
+}
+
+.gh-color {
+	display:inline-block;
+	padding: 5px;
+}

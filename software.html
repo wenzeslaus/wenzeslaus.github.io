@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<title>Vaclav Petras</title>
+
+<link rel=icon href="./logos/favicon_16x16.png" sizes="16x16" type="image/png">
+<link rel=icon href="./logos/favicon_57x57.png" sizes="57x57" type="image/png">
+<link rel=icon href="./logos/favicon_100x100.png" sizes="100x100" type="image/png">
+
+<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+
+<link href="layout.css" rel="stylesheet" type="text/css" media="screen">
+<link href="style.css" rel="stylesheet" type="text/css" media="screen">
+
+<!-- GitHub report -->
+<script src="ghreport_colors.js"></script>
+<script src="ghreport.js"></script>
+<link rel="stylesheet" type="text/css" href="ghreport.css">
+
+</head>
+
+<body>
+
+<div id="outercontainer">
+<div id="container">
+
+<header>
+<div id="header-image">
+    <h1>Vaclav Petras</h1>
+</div>
+
+<nav>
+<ul class="nav">
+<li><a href="index.html">About</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="research.html">Research</a></li>
+<li><a href="publications.html">Publications</a></li>
+<li><a href="teaching.html">Teaching</a></li>
+<li><a href="software.html">Software</a></li>
+</ul>
+</nav>
+
+</header>
+
+<main>
+
+<!-- This is a generated file. Do not edit. -->
+<h2>Software</h2>
+
+<h3>Software I'm developing</h3>
+
+<ul class="image-list">
+    <li>
+        <img src="./logos/grass_logo.png" alt="GRASS GIS logo">
+        <h4><a href="http://grass.osgeo.org/">GRASS GIS</a></h4>
+        <p>
+            <a href="http://grass.osgeo.org/">GRASS GIS</a>
+            is a free and open source Geographic Information System (GIS)
+            used for geospatial data management and analysis, image processing,
+            spatial modeling, and visualization. GRASS GIS is all purpose GIS although it is focused mainly
+            on scientific GIS applications involving big data.
+            GRASS GIS is the Open Source Geospatial Foundation
+            (<a href="http://osgeo.org">OSGeo</a>) project.
+        </p>
+        <p>
+            I contribute to the GRASS GIS project by developing new features
+            and as a part of GRASS GIS community I support GRASS users personally or through
+            <a href="http://lists.osgeo.org/listinfo/grass-user" target="_blank">mailing list</a>
+            and <a href="http://gis.stackexchange.com/users/10759/wenzeslaus" target="_blank">GIS StackExchange</a>.
+        </p>
+        <p>
+            Feel free to <a href="index.html">contact me</a>
+            in case you have questions or you are interested in collaboration
+            on some new features.
+        </p>
+    </li>
+    <li>
+      <img src="./pictures/blank.png" alt="no illustration">
+      <h4><a href="https://github.com/wenzeslaus/g.remote">g.remote</a></h4>
+      <p>g.remote is a module for GRASS GIS which can execute any
+      module or script on a remote machine. It can copy the data
+      to a temporary Location on the remote machine and copy the results
+      back.</p>
+    </li>
+    <li>
+      <img src="./pictures/rfutures.png" alt="patches grown by r.futures">
+      <h4><a href="http://grass.osgeo.org/grass7/manuals/addons/r.futures.html">r.futures</a></h4>
+      <p>r.futures is a group of modules in a GRASS GIS Addons repository which implements
+      the FUTURES model developed by Meentemeyer et al. for modeling urban growth.</p>
+    </li>
+    <li>
+      <img src="./pictures/rinlidar.png" alt="r.in.lidar output">
+      <h4><a href="http://grass.osgeo.org/grass72/manuals/r.in.lidar.html">r.in.lidar</a></h4>
+      <p>r.in.lidar is a GRASS GIS module which performs 2D binning
+      of a lidar point cloud. I added functionality to help with
+      performing tasks such as vegetation structure statistics.</p>
+    </li>
+    <li>
+      <img src="./pictures/r3inlidar.png" alt="slices of r3.in.lidar output">
+      <h4><a href="http://grass.osgeo.org/grass72/manuals/r3.in.lidar.html">r3.in.lidar</a></h4>
+      <p>r3.in.lidar is a GRASS GIS module which performs 3D binning
+      of a lidar point cloud to determine, e.g. vegetation structure.
+      The module will be included in GRASS GIS 7.2.</p>
+    </li>
+    <li>
+      <img src="./pictures/fire.png" alt="fire simulation">
+      <h4>
+        <a href="https://grass.osgeo.org/grass73/manuals/r.ros.html">r.ros</a>,
+        <a href="https://grass.osgeo.org/grass73/manuals/r.spread.html">r.spread</a>
+        and
+        <a href="https://github.com/ncsu-geoforall-lab/r.fire.spread">r.fire.spread</a>
+      </h4>
+      <p>r.ros and r.spread are GRASS GIS modules for simulating elliptical fire spread.
+      I extended their inputs and outputs and used them in r.fire.spread module
+      (available on GitHub) which can work with time-dependent inputs.</p>
+    </li>
+    <li>
+      <img src="./pictures/rlocalrelief.png" alt="r.local.relief output shade">
+      <h4><a href="http://grass.osgeo.org/grass7/manuals/addons/r.local.relief.html">r.local.relief</a></h4>
+      <p>r.local.relief is a GRASS GIS addon for creating a local relief model from elevation map.
+      Usages include archeology and various terrain analysis tasks in general.</p>
+    </li>
+    <li>
+      <img src="./pictures/rshadedrelief.png" alt="r.shaded.relief colorful output">
+      <h4><a href="http://grass.osgeo.org/grass7/manuals/addons/r.shaded.pca.html">r.shaded.pca</a></h4>
+      <p>r.shaded.pca is a GRASS GIS addon which creates relief shades from
+      various directions and combines them into RGB composition.
+      The combined shades highlight terrain features
+      which wouldn't be visible using standard shading technique.
+      This tool can be used in archeology as well as general terrain analysis.</p>
+    </li>
+    <li>
+      <img src="./pictures/rsamplecategory.png" alt="points on category raster">
+      <h4><a href="http://grass.osgeo.org/grass7/manuals/addons/r.sample.category.html">r.sample.category</a></h4>
+      <p>r.sample.category is a GRASS GIS addon for creating sampling points
+      from each category (class) in a raster map. This is a handy tool
+      for stratified sampling.</p>
+    </li>
+    <li>
+      <img src="./pictures/rsundaily.png" alt="r.sun.daily output in 3D">
+      <h4><a href="http://grass.osgeo.org/grass7/manuals/addons/r.sun.daily.html">r.sun.daily</a></h4>
+      <p>r.sun.daily is a GRASS GIS addon for computing solar radiation
+      for a sequence of days during a year.</p>
+    </li>
+    <li>
+      <img src="./pictures/rsunhourly.png" alt="r.sun.hourly output in 3D">
+      <h4><a href="http://grass.osgeo.org/grass7/manuals/addons/r.sun.hourly.html">r.sun.hourly</a></h4>
+      <p>r.sun.hourly is a GRASS GIS addon for computing solar radiation during a day.</p>
+    </li>
+    <li>
+      <img src="./pictures/blank.png" alt="no picture">
+      <h4><a href="http://grass.osgeo.org/grass7/manuals/addons/g.proj.all.html">g.proj.all</a></h4>
+      <p>g.proj.all is a GRASS GIS addon to reproject multiple raster or vector maps from one GRASS GIS Location (and CRS) to another.</p>
+    </li>
+    <li>
+      <img src="./pictures/blank.png" alt="no picture">
+      <h4><a href="http://grass.osgeo.org/grass7/manuals/addons/g.rename.many.html">g.rename.many</a></h4>
+      <p>g.rename.many is a GRASS GIS addon to rename multiple raster or vector maps based on a CSV file
+      which is useful for example, when creating a localized dataset
+      (or an English dataset from a localized version).</p>
+    </li>
+</ul>
+
+<h3>Source code repositories</h3>
+<ul class="image-list">
+    <li>
+    <img src="./logos/grass_logo.png" alt="GRASS GIS logo">
+    <h4><a href="https://trac.osgeo.org/grass/browser/grass/trunk">GRASS GIS repository</a></h4>
+    <p>
+        A lot of my code goes directly to GRASS GIS, specifically to its Subversion (SVN) repository
+        which is available online through GRASS GIS <a href="https://trac.osgeo.org/grass/browser/trunk">Trac</a>
+        or <a href="http://svn.osgeo.org/grass/grass/trunk">SVN HTML browser</a>.
+    </p>
+</li>
+<li>
+    <img src="./logos/grass_logo.png" alt="GRASS GIS logo">
+    <h4><a href="https://trac.osgeo.org/grass/browser/grass-addons">GRASS GIS Addons repository</a></h4>
+    <p>
+        I try to create most of tools as GRASS modules which we publish in GRASS Addons repository.
+        GRASS Addons Subversion (SVN) repository is available online in the same way as GRASS GIS code itself
+        through GRASS GIS <a href="https://trac.osgeo.org/grass/browser/grass-addons">Trac</a>
+        or <a href="http://svn.osgeo.org/grass/grass-addons/">SVN HTML browser</a>.
+    </p>
+</li>
+    <li>
+        <img src="./logos/octocat-original.png" alt="GitHub octocat">
+        <h4><a href="https://github.com/wenzeslaus">NCSU GeoForAll Lab organization at GitHub</a></h4>
+        <p>
+            GitHub is a repository hosting service which works with Git repositories.
+            I have there usually smaller projects or projects in early stages of development
+            which cannot be placed to more appropriate repositories (such as GRASS GIS SVN).
+            Besides
+            <a href="https://github.com/wenzeslaus">my repositories</a>, I also put a lot of code to
+            <a href="https://github.com/ncsu-geoforall-lab">NCSU GeoForAll Lab repositories</a>.
+        </p>
+    </li>
+</ul>
+
+<h3>Statistics</h3>
+<ul class="image-list">
+    <li>
+    <img src="logos/open_hub.png" alt="Open Hub logo" />
+    <h4>Open HUB</h4>
+    <p>
+        Statistics for projects I contribute to which are larger and
+        registered at Black Duck Open Hub, formerly Ohloh
+        (this does not include a lot of medium sized and small projects).
+    </p>
+    <p>
+        <a href='https://www.openhub.net/accounts/568236?ref=Detailed' target='_blank'>
+            <img alt='Open Hub profile for wenzeslaus' src='https://www.openhub.net/accounts/568236/widgets/account_detailed.gif' />
+        </a>
+    </p>
+    <p>
+        Check also full statistics about my contributions to bigger open souce projects at
+        <a href="https://www.openhub.net/accounts/wenzeslaus">Black Duck Open HUB</a>.
+    </p>
+    </li>
+    <li>
+        <img src="logos/octocat.svg">
+        <h4>GitHub</h4>
+        <p>
+            Statistics for projects I contribute to through GitHub
+            (i.e. it does not cover all projects, for example GRASS GIS).
+        </p>
+        <p>
+            <span class="gh gh-avatar"></span>
+            <span class="gh gh-username">wenzeslaus</span>
+        </p>
+        <p>
+            <span class="gh gh-repos"></span>,
+            <span class="gh gh-gists"></span>,
+            <span class="gh gh-followers"></span>,
+            <span class="gh gh-languages"></span>
+        </p>
+    </li>
+</ul>
+
+<h3>Software I'm using</h3>
+<ul class="image-list">
+    <li>
+    <img src="./logos/QGIS_logo.png" alt="QGIS logo">
+    <h4><a href="http://qgis.org/">QGIS</a></h4>
+    <p>
+        <a href="http://qgis.org/">QGIS</a> is a free and open source GIS
+        which is easy to use and enables sophisticated cartographic outputs.
+        QGIS is fully-fledged alternative to proprietary
+        tools in terms of functionality, user interface and commercial support.</p>
+    </li>
+    <li>
+        <img src="./logos/leaflet_logo.png" alt="Leaflet logo">
+        <h4><a href="http://leafletjs.com/">Leaflet</a></h4>
+        <p>
+        <a href="http://leafletjs.com/">Leaflet</a> is an open source JavaScript library for interactive online maps.
+        It is easy to use, fast and extensible by plugins.
+        </p>
+    </li>
+</ul>
+
+</main>
+
+<footer>
+
+<nav>
+<ul>
+<li><a href="index.html#contact">Contact</a></li>
+<li><a href="https://plus.google.com/+VáclavPetráš/" rel="publisher" target='_blank'>Google+</a></li>
+<li><a href="https://github.com/wenzeslaus" target='_blank'>GitHub</a></li>
+<li><a href='https://www.openhub.net/accounts/568236' target='_blank'>Open Hub</a></li>
+<li><a href="https://www.linkedin.com/in/vaclav-petras-a24a1b114" target='_blank'>LinkedIn</a></li>
+<li><a href="https://twitter.com/vaclavpetras" target='_blank'>Twitter</a></li>
+<li>&copy; 2016 Vaclav Petras</li>
+</ul>
+</nav>
+
+</footer>
+
+</div>
+</div>
+
+<script type="text/javascript" src="styling.js"></script>
+</body>
+</html>
+
